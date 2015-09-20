@@ -19,5 +19,28 @@
 	<div id="header">
 		<h1><center>Sign-Up<center></h1>
 	</div>
+	
+	<script type = "text/javascript" src = "register_check.js" >
+    	</script>
+    	<h3> Registration Form </h3>
+    	<form action = " ">
+       	<p>
+            
+    	<label> 
+        	<input type = "text" id = "name">
+        	Please enter your name (last name, first name, middle initial)
+    		</label>
+    		<br/>
+    		<br/>       
+    	<label> 
+        
+    	<input type = "reset" name = "reset" />
+    	<input type = "submit" name = "submit" />
+    	</p>
+	</form>
+    
+    	<script type = "text/javascript">
+        	document.getElementById("custName").onchange = chkName;
+    	</script>
         </body>
 </html>
