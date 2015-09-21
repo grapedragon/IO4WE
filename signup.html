@@ -27,7 +27,23 @@
        	<p>
             
     	<label> 
-        	Please enter your name (last name, first name, middle initial)
+        	First Name
+        	<input type = "text" id = "name">
+    		</label>
+    		<br/>
+    		<br/>       
+    	<label> 
+    	
+    	<label> 
+        	Surname
+        	<input type = "text" id = "name">
+    		</label>
+    		<br/>
+    		<br/>       
+    	<label> 
+    	
+    	<label> 
+        	Middle Initial
         	<input type = "text" id = "name">
     		</label>
     		<br/>
@@ -40,7 +56,9 @@
 	</form>
     
     	<script type = "text/javascript">
-        	document.getElementById("custName").onchange = chkName;
+        	document.getElementById("firstName").onchange = chkName;
+        	document.getElementById("surnameName").onchange = chkName;
+        	document.getElementById("middleInitial").onchange = chkName;
     	</script>
         </body>
 </html>
