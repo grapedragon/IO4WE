@@ -25,35 +25,29 @@
     	<h3> Registration Form </h3>
     	<form action = " ">
        	<p>
-            
-    	<label> 
-        	First Name
-        	<input type = "text" id = "name">
-    		</label>
-    		<br/>
-    		<br/>       
-    	<label> 
-    	
-    	<label> 
-        	Surname
-        	<input type = "text" id = "name">
-    		</label>
-    		<br/>
-    		<br/>       
-    	<label> 
-    	
-    	<label> 
-        	Middle Initial
-        	<input type = "text" id = "name">
-    		</label>
-    		<br/>
-    		<br/>       
-    	<label> 
         
-    	<input type = "reset" name = "reset" />
-    	<input type = "submit" name = "submit" />
-    	</p>
-	</form>
+    <label> Please enter a password
+        <input type = "password" id = "initial" size = "10"/>
+    </label>
+    <br/>
+    <br/>
+    <label> Verify your password
+        <input type = "password" id = "second" size = "10"/>
+    </label>
+    <br/>
+    <br/>
+            
+    <input type = "reset" name = "reset" />
+    <input type = "submit" name = "submit" />
+    </p>
+    </form>
+    
+    <ul class="nav nav-pills nav-stacked">
+    
+    <script type = "text/javascript" src = "register_check.js" >
+    </script>
+    
+</body>
     
     	<script type = "text/javascript">
         	document.getElementById("firstName").onchange = chkName;
