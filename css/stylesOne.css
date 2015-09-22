@@ -1,7 +1,5 @@
 nav {
     background-color: black;
     text-align: center;
-    padding: 5;
-    border-bottom: 1;
-    border-bottom-color: white;
+    font-size: 200%;
 }
