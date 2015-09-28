@@ -1,3 +1,22 @@
+function chkName()
+{
+    var myName = document.getElementById("userName");
+    
+    var pos = myName.value.search(/^[A-Z][a-z]+, ?[A-Z][a-z]+, ?[A-Z]\.?$/);
+    
+    if (pos != 0)
+    {
+        alert("The name you entered (" + myName.value + ") is not in the correct form.");
+        myName.focus();
+        myName.select();
+        return false;
+    }
+    else
+    {
+        return true;   
+    }
+}
+
 function chkPassword() 
 {
     var init = document.getElementById("initial");
@@ -12,3 +31,5 @@ function chkPassword()
         return true;
     }
 }
+
+
