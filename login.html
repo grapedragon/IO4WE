@@ -43,7 +43,11 @@
 	<center>
 	    <form id = "myForm" action = " ">
 	        <p>
-	        
+	    <label> Username
+        	<input type = "text" id = "userName">
+        	</label>
+        	<br/>
+        	<br/> 
 	    <label> Password
 	        <input type = "password" id = "initial" size = "10"/>
 	    </label>
@@ -58,8 +62,9 @@
 	    <ul class="nav nav-pills nav-stacked">
 	</center>
 	    <script type = "text/javascript">
-	    	document.getElementById("myForm").onblue = chkPassword;
-	    	document.getElementById("myForm").onsubmit = chkPassword;
+	    	document.getElementById("custName").onchange = chkName;
+	    	document.getElementById("initial").onblue = chkPassword;
+	    	document.getElementById("initial").onsubmit = chkPassword;
 	    </script>
 	</div>
         </body>
