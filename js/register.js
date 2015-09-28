@@ -8,9 +8,7 @@ function chkPassword()
         return false;
     }
     else 
-	{
+    {
         return true;
     }
-    
-    document.getElementById("myForm").onblur = chkPassword;
 }
