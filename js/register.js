@@ -12,5 +12,5 @@ function chkPassword()
         return true;
     }
     
-    document.getElementById("myForm").onsubmit = chkPassword;
+    document.getElementById("myForm").onblur = chkPassword;
 }
