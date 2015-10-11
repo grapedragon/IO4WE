@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>My Profile - edit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+    <body>
+
+    <!--navbar-->
+    <nav class="navbar navbar-inverse">
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ><a href = "index.html">Index</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="gamePage.html"> Play Game</a></li>
+              <li class="active"><a href="profile.html">Profile<span class="sr-only">(current)</span></a></li>
+              <li><a href = "whosonline.html">Whos online</a></li>
+        </ul>
+        </div> <!-- /.collapse Navar-collapse -->
+     
+    </nav>
+
+  <div class="container">
+
+    <!--jumbotron-->
+    <div class="header">
+      <img src="img/jumbotron.png" class="img-responsive center-block"/>
+    </div>
+            
+
+    <!--row 1 -->
+    <div class="row">
+      <br><br>
+      <h2>[php name]'s Profile</h2>
+      <p>
+      </p>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row">
+      <br><br>
+      <form>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email Address *required</label>
+          <input type="email" class="form-control" id="useremail" placeholder="Email needed to apply changes">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password *required</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password needed to apply changes">
+        </div>
+        <br><h2>Password Change</h2>
+        <div class="form-group">
+          <label for="exampleInputPassword1">New Password</label>
+          <input type="password" class="form-control" id="newpw" placeholder="Password needed to apply changes">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Confirm New Password</label>
+          <input type="password" class="form-control" id="confirmnewpw" placeholder="Password needed to apply changes">
+        </div>
+        <br><h2>Enroll in a Course</h2>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Course ID</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter the Course ID provided by your instructor">
+        </div>
+        <!--submit button-->
+        <br>
+        <button type="submit" class="btn btn-success">Apply Changes</button>
+      </form>
+      <br><br>
+    </div>
+
+
+  </div><!--container-->
+
+
+<!-- javascript -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+</font>
+</html>

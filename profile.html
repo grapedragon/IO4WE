@@ -1,51 +1,78 @@
 <!doctype html>
 <html>
 <head>
-<font face="sans-serif">
-<meta charset="utf-8">
-<title>User Profile</title>
-<link href="css/bootstrap.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
 </head>
-    <body background="img/backdrops/background.png">
- 
-            <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      
-    </div>
+    <body>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-   <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li ><a href = "index.html">Index</a></li>
-            <li><a href="login.html">Login</a></li>
-            <li><a href="gamePage.html"> Play Game</a></li>
-            <li class="active"><a href="profile.html">Profile<span class="sr-only">(current)</span></a></li>
-            <li><a href = "whosonline.html">Whos online</a></li>
-       </ul>
-      </div> <!-- /.collapse Navar-collapse -->
-   </div><!-- /.container-fluid -->
-</nav>
+    <!--navbar-->
+    <nav class="navbar navbar-inverse">
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li ><a href = "index.html">Index</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="gamePage.html"> Play Game</a></li>
+              <li class="active"><a href="profile.html">Profile<span class="sr-only">(current)</span></a></li>
+              <li><a href = "whosonline.html">Whos online</a></li>
+        </ul>
+        </div> <!-- /.collapse Navar-collapse -->
+     </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+
+    <!--jumbotron-->
+    <div class="header">
+      <img src="img/jumbotron.png" class="img-responsive center-block"/>
+    </div>
             
 
-<div id="header">
-<h1><center>Prisoner's Dilemma<center></h1>
-<h3><center>My Profile<center></h3>
-</div>
-<img src="./avatars/avatar_1.png" style="float:left" width="200" height="200" alt="profile picture" /img><!--im thinking vector graphics. simple designs and they can pick the colors-->
-<h2>&nbsp;&nbsp;Name: </h2><!--possibly in h2-->
-<p>&nbsp;&nbsp;Alias: </p><!--Assigned Username-->
-<p>&nbsp;&nbsp;&nbsp;Running Score:</p><!--the current running score of the player-->
-<p>&nbsp;&nbsp;&nbsp;Member of:</p><!--CourseID, Says CourseName-->
-<p>&nbsp;&nbsp;&nbsp;</p><!--keep a log of the players high score and this can link to it in the db-->
-<br><br><p>&nbsp;&nbsp;&nbsp;Edit my profile</p><!--link to form-->
+    <!--row 1 -->
+    <div class="row">
+      <br><br>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 push">
+        <img src="img/profilepics/orange-ram.png" class="img-responsive">
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+        <h1>Name: "Bobby Redneck" [insert name php] </h1>
+        <h2>Alias: "Orange Ram" [alias php] </h2>
+      </div>
+    </div>
+
+    <!-- row 2 -->
+    <div class="row">
+      <br><br>
+      <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        <br><br>
+        <a class="btn btn-default btn-block" href="edit-profile.html" role="button">Edit Profile</a>
+      </div>
+      <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+        <h2>Running Score: 512 [php]</h2>
+        <br><h3>Member of:</h3>
+        <p>[php class stuff]</p>
+        <p><b>BIOL 1101-K, Fall 2015</b></p>
+        <p>Dr. Bio-man</p><br>
+        <p><b>PSYC 3100, Spring 2015</b></p>
+        <p>Dr. Psycho-man</p><br>
+      </div>
+    </div>
+
+    <!-- row 3, past games table -->
+    <div class="row">
+      <h3>Previous Games</h3>
+      <p>A table will be put inside this row to show some of the past games the user has played.</p>
+      <br><br><br>
+    </div>
+
+<!-- javascript -->
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 </body>
 </font>
