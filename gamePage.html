@@ -15,8 +15,7 @@
      <!-- Collect the nav links, forms, and other content for toggling -->
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-              <li><a href = "index.html">Index</a></li>
-              <li><a href="login.html">Login</a></li>
+              <li><a href = "index.html">Home</a></li>
               <li class="active"><a href="gamePage.html">Play Game<span class="sr-only">(current)</span></a></li>
               <li><a href="profile.html">Profile</a></li>
               <li><a href = "whosonline.html">Whos online</a></li>
@@ -27,25 +26,29 @@
             
 	<div id="header">
 	<h1><center>Prisoner's Dilemma<center></h1>
-	<h3><center>Game<center></h3>
 	</div>
 	
 	<div id="content">
 	<center>
 	<br/>
-	<h4><center>SQUEAL! or Stay Silent...<center></h4>
-	<img src="img/squeal.png" style="width:150px;height:240px;">
-	<img src="img/silent.png" style="width:150px;height:240px;">
+	<h4><center>SQUEAL! or Stay Silent...</center></h4>
+	<img src="img/squeal.png" style="width:200px;height:320px;">
+	<img src="img/silent.png" style="width:200px;height:320px;">
 	<br/>
-    	<input type = "submit" name = "squeal" value="SQUEAL!"/>
-    	<input type = "submit" name = "silent" value="Stay Silent..."/>
-    	</p>
+	    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        <br>
+        <a class="btn btn-success btn-block" href="edit-profile.html" role="button">Squeal</a>
+        </div>
+		
+		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
+        <br>
+        <a class="btn btn-primary btn-block" href="edit-profile.html" role="button">Stay Silent</a>
+        </div>
 	</center>
 	</div>
 
 	<div id="footer">
 	<center>
-	The Games Page was created by Neil Robertson of IO4WE
 	</center>
 	</div>
 </body>
