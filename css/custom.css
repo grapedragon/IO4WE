@@ -1,1 +1,22 @@
 /* this is our custom Css file*/
+body {
+	background-color: #000;
+	background-image: img/backdrops/cinder-blocks-texture.jpeg ;
+	color: #d3d3d3;
+}
+.container {
+	background-image: img/backdrops/cinderblockstexture.jpg;
+}
+//make default buttons orange
+	.btn-default {
+		background-color: #f60;
+		border-color: #000;
+		color: #000;
+		font-weight: bold;
+	}
+	.btn-default:hover {
+		background-color: #ff6600;
+		border-color: #000;
+		color: #fff;
+		font-weight: bold;
+	}
