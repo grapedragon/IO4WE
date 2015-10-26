@@ -33,15 +33,16 @@
 	<div id="body">
 	<script type = "text/javascript" src = "js/register.js"></script>	
 	<center>
-	    <form id = "myForm" action = "login.php">
+        <p> New? <a href="register.html">Click Here.</a></p>
+	    <form id = "myForm" action = "logincode.php" method="post">
 	        <p>
 	        <br/>
-	    <label> Username
-        	<input type = "text" id = "userName">
+	    <label> Email
+        	<input type = "text" id = "userName" name="email">
         	</label>
         	<br/>
 	    <label> Password
-	        <input type = "password" id = "initial"/>
+	        <input type = "password" id = "initial" name = "password" />
 	    </label>
 	    <br/>
 	    <br/>

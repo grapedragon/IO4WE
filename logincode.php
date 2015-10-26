@@ -14,20 +14,40 @@
 					$dbemail = $row['email']; //must matching with the field name in your database table;
 					$dbpass = $row['pw'];
 					$dbfirstname = $row['first_name'];
+                    $dbisadmin = $row['isadmin'];
          				
 				}	
 				if($login_email==$dbemail)
 				{
 					if($login_password==$dbpass)
 					{
-						echo "Welcome ".$dbfirstname.", you are in the wonderland!";
-                        include("navbar.php");
+						//Successfull login -  check for admin
+                        
+                        if($dbisadmin === '1')
+                        {
+                            //admin redirect
+                            //alex you need to write where you want the admin to go
+                            echo " You are the Almighty Admin MUhahahahaha ";
+                             header('Location: admin.html');
+                            exit;
+                           // echo "admin " .$dbisadmin. " ." ; 
+                        }
+                        else
+                        {
+                            //student redirect
+                            echo " Oh a student fine";
+                            header('Location: gamePage.html');
+                            exit;
+                           // echo "admin" .$dbisadmin. " . ";
+                        }
+                        
+                        
 					}
 		 			else 
 					{		
 						echo "your password is incorrect!";
-						echo "hey there";
-                        echo "USER ".$dbemail." ".$login_email." PASS ".$dbpass." ".$login_password.".";
+						//echo "hey there";
+                       // echo "USER ".$dbemail." ".$login_email." PASS ".$dbpass." ".$login_password.".";
 					}
 				}
 				else
