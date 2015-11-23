@@ -7,6 +7,9 @@ h1{
 	color: #f60;
 	font-weight: bold;
 }
+h2{
+	color: #fff;
+}
 //make default buttons orange, bold and hover effects
 	.btn-default {
 		background-color: #f60;
