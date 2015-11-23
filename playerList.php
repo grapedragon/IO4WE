@@ -30,9 +30,12 @@
 	</div>
 	
 	<div id="container">
-	<?php
+	<?
+	//Start the session
+	session_start();
+	include('connection.php');
 		mysqli_query($dbc, "SELECT* FROM users");
-		?>
+	?>
 		
 	</div>
 	
