@@ -16,25 +16,29 @@ session_start();
 
     <!--navbar-->
     <?php
-      include 'navbar.php';
+      include_once 'navbar.php';
     ?>
 
     <div class="container">
 
     <!--jumbotron-->
     <div class="header">
-      <img src="img/jumbotron.png" class="img-responsive center-block"/>
+      <img src="img/jumbotron-sm.png" class="img-responsive center-block"/>
     </div>
 	
 	<br>
 	<!--login button-->
     <div class = "row">
-        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+        </div>
+        <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
           <a class="btn btn-default btn-block" href="login.html" role="button">Log In</a>
         </div>
-		<div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
           <a class="btn btn-primary btn-block" href="register.html" role="button">Sign Up</a>
-      </div>
+        </div>
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+        </div>
     </div>
 
     <!-- javascript -->

@@ -1,5 +1,4 @@
 
-<!--NAVBAR -->
 <nav class="navbar navbar-inverse">
   
      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -16,4 +15,3 @@
       </div> <!-- /.collapse Navar-collapse -->
      
 </nav>
-
