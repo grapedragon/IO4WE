@@ -27,7 +27,7 @@ session_start();
 	<div id="body">
 	<script type = "text/javascript" src = "js/register.js"></script>	
 	<center>
-        <p> New? <a href="register.html">Click Here.</a></p>
+        <p> New? <a href="regi.php">Click Here.</a></p>
 	    <form id = "myForm" action = "logincode.php" method="post">
 	        <p>
 	        <br/>
