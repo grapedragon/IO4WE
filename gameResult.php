@@ -1,5 +1,7 @@
 <!doctype html>
-
+<?php
+session_start();
+?>
 <html>
 <head>
     <meta charset="utf-8">
@@ -20,23 +22,6 @@
 	<h1><center>Prisoner's Dilemma<center></h1>
 	</div>
 	
-	<div id="container">
-	<?php
-<<<<<<< HEAD
-	//Start the session
-	session_start();
-	include('connection.php');
-		mysqli_query($dbc, "SELECT* FROM users");
-=======
-		//Start the session
-	session_start();
-	include('connection.php');
-	mysqli_query($dbc, "SELECT* FROM users");
->>>>>>> a02b89b5b4a666fbfaf21cc53101414dcbeee5dd
-	?>
-		
-	</div>
-	
 
 	<div id="footer">
 	<center>
@@ -45,6 +30,3 @@
 </body>
 </font>
 </html>
-
-
-
