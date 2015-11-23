@@ -7,7 +7,10 @@ body {
 .container {
 	background-image: img/backdrops/cinderblockstexture.jpg;
 }
-//make default buttons orange
+h1{
+	color: #f60;
+}
+//make default buttons orange, bold and hover effects
 	.btn-default {
 		background-color: #f60;
 		border-color: #000;
@@ -16,6 +19,16 @@ body {
 	}
 	.btn-default:hover {
 		background-color: #ff6600;
+		border-color: #000;
+		color: #fff;
+		font-weight: bold;
+	}
+//make primary buttons bold and hover effects
+	.btn-primary {
+		color: #000;
+		font-weight: bold;
+	}
+	.btn-primary:hover {
 		border-color: #000;
 		color: #fff;
 		font-weight: bold;
