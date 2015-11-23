@@ -22,10 +22,17 @@
 	
 	<div id="container">
 	<?php
+<<<<<<< HEAD
+	//Start the session
+	session_start();
+	include('connection.php');
+		mysqli_query($dbc, "SELECT* FROM users");
+=======
 		//Start the session
 	session_start();
 	include('connection.php');
 	mysqli_query($dbc, "SELECT* FROM users");
+>>>>>>> a02b89b5b4a666fbfaf21cc53101414dcbeee5dd
 	?>
 		
 	</div>
