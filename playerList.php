@@ -31,7 +31,7 @@
 	
 	<div id="container">
 	<?php
-		mysqli_query($dbc, "SELECT* FROM users);
+		mysqli_query($dbc, "SELECT* FROM users");
 		?>
 		
 	</div>
