@@ -31,8 +31,11 @@
 	
 	<div id="container">
 	<?php
-		mysqli_query($dbc, "SELECT* FROM users");
-		?>
+		//Start the session
+	session_start();
+	include('connection.php');
+	mysqli_query($dbc, "SELECT* FROM users");
+	?>
 		
 	</div>
 	
