@@ -30,7 +30,7 @@
 	</div>
 	
 	<div id="container">
-	<?
+	<?php
 	//Start the session
 	session_start();
 	include('connection.php');
