@@ -12,18 +12,9 @@
     <body>
 
     <!--navbar-->
-    <nav class="navbar navbar-inverse">
-     <!-- Collect the nav links, forms, and other content for toggling -->
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-              <li><a href = "index.html">Home</a></li>
-              <li class="active"><a href="gamePage.html">Play Game<span class="sr-only">(current)</span></a></li>
-              <li><a href="profile.html">Profile</a></li>
-              <li><a href = "whosonline.html">Whos online</a></li>
-        </ul>
-        </div> <!-- /.collapse Navar-collapse -->
-     </div><!-- /.container-fluid -->
-    </nav>
+    <?php
+      include 'navbar.php';
+    ?>
             
 	<div id="header">
 	<h1><center>Prisoner's Dilemma<center></h1>
