@@ -1,3 +1,11 @@
+<head>
+    <meta charset="utf-8">
+    <title>Regi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/respond.js"></script>
+</head>
+
 <?php
 
 $sent = false;
@@ -36,11 +44,19 @@ if ( isset($_POST['register']) )
 <?php if ($sent==false) { ?>
 
     <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="post" name="register">
-       <label>Password1</label> <input type="password" maxlength="15" name="password1" /><br>
-       <label>Password2</label> <input type="password" maxlength="15" name="password2" /><br>
-       <label>Email</label> <input type="text" placeholder="your@email.com" maxlength="25"  name="email" value="<?php if (isset($_POST['email'])) {echo $_POST['email'];} ?>"/><br>
-        
-        <input type="submit" value="Register" name="register"/>
+        <div class="form-group">
+            <label for="password1">Password</label> 
+            <input type="password" maxlength="15" class="form-control" name="password1" placeholder="Password" />
+        </div>
+        <div class="form-group">
+            <label for="password2">Confirm Password</label>
+            <input type="password" maxlength="15" name="password2" class="form-control" placeholder="Confirm Password"/>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label> 
+            <input type="text" class="form-control" placeholder="your@email.com" maxlength="25"  name="email" value="<?php if (isset($_POST['email'])) {echo $_POST['email'];} ?>"/>
+        </div>
+        <button type="submit" class="btn btn-default" value="Register" name="register">Register</button>
     </form>
 
 <?php } 
