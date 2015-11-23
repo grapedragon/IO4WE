@@ -52,7 +52,7 @@ $password = $_POST['password2'];
 //if values are not empty, proceed to store them in the database
 if( !empty($email) && !empty($password))
 {
-    mysqli_query($dbc, "INSERT INTO user1(email, pw) VALUES ('$email', '$password')");
+    mysqli_query($dbc, "INSERT INTO users(email, pw) VALUES ('$email', '$password')");
 		echo " row  inserted, everything worked fine!";	
 		}else{		
 			echo "ERROR: you left some values in blank!";	
