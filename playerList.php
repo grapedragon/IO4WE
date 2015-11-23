@@ -31,8 +31,16 @@
 		//Start the session
 	session_start();
 	include('connection.php');
-	mysqli_query($dbc, "SELECT* FROM users");
->>>>>>> a02b89b5b4a666fbfaf21cc53101414dcbeee5dd
+	$query = "SELECT * FROM users"; 
+    $result = mysql_query($query);
+	
+	echo "<table>"
+	while($row = mysql_fetch_array($result)){   
+	echo "<tr><td>" . $row['first_name'] . "</td><td>" . $row['last_name'] . $row['group'] . $row['email']. $row['pw']. $row['isAdmin'].
+						$row['gamesplayed']. $row['runningscore']. $row['animal']. $row['color']."</td></tr>";  
+	}
+	echo "</table>";
+	mysql_close();
 	?>
 		
 	</div>
