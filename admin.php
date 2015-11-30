@@ -26,19 +26,19 @@ session_start();
 			<td><a class="btn btn-default btn-block" href="playerList.php" role="button">View Players</a></td>
 		</tr>
 		<tr>
-			<td><a class="btn btn-default btn-block" href="edit-profile.html" role="button">Assign Groups</a></td>
+			<td><a class="btn btn-default btn-block" href="edit-profile.php" role="button">Assign Groups</a></td>
 		</tr>
 		<tr>
-			<td><a class="btn btn-default btn-block" href="gameResult.html" role="button">View Scores</a></td>
+			<td><a class="btn btn-default btn-block" href="gameResult.php" role="button">View Scores</a></td>
 		</tr>
 		<tr>
 			<td><a class="btn btn-default btn-block" href="opengames.php" role="button">View Open Games</a></td>
 		</tr>
 		<tr>
-			<td><a class="btn btn-default btn-block" href="edit-profile.html" role="button">Toggle Game Type</a></td>
+			<td><a class="btn btn-default btn-block" href="edit-profile.php" role="button">Toggle Game Type</a></td>
 		</tr>
 		<tr>
-			<td><a class="btn btn-default btn-block" href="edit-profile.html" role="button">Edit Profile</a></td>
+			<td><a class="btn btn-default btn-block" href="edit-profile.php" role="button">Edit Profile</a></td>
 		</tr>
 	</table>
 
