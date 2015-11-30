@@ -63,18 +63,8 @@ $fname = $_POST['fname'];
 //if values are not empty, proceed to store them in the database
 if( !empty($email) && !empty($password))
 {
-    mysqli_query($dbc, "INSERT INTO users(email, pw) VALUES ('$email', '$password')");
-	//	echo " row  inserted, everything worked fine!";
-		if( !empty($lname))
-		{
-			mysqli_query($dbc, "INSERT INTO users() VALUES ('$lname')");
-			if( !empty($fname))
-			{
-				mysql
-			}
-		}
-		
-		
+    mysqli_query($dbc, "INSERT INTO users(email, pw, fname, lname) VALUES ('$email', '$password','$fname','$lname')");
+			//	echo " row  inserted, everything worked fine!";
 		include ('login.php');
 		
 		}else{		
