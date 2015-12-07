@@ -1,8 +1,8 @@
 <!doctype html>
 <html>
-	<?php
-session_start();
-?>
+ <?php
+	include 'session.php';
+ ?>
   <head>
     <meta charset="utf-8">
     <title>Admin Page</title>
@@ -16,29 +16,31 @@ session_start();
 
     <!--navbar-->
     <?php
-      include 'navbar.php';
+      include 'navbarAdmin.php';
     ?>
-
+    <br/>
+	<br/>
+	<br/> 
     <div class="container">
 
     <table align = center>
 		<tr>
-			<td><a class="btn btn-default btn-block" href="playerList.php" role="button">View Players</a></td>
+			<td><a class="btn btn-default btn-block" href="output.php" role="button">View All Registered Players</a></td>
 		</tr>
 		<tr>
 			<td><a class="btn btn-default btn-block" href="edit-profile.php" role="button">Assign Groups</a></td>
 		</tr>
 		<tr>
-			<td><a class="btn btn-default btn-block" href="gameResult.php" role="button">View Scores</a></td>
-		</tr>
-		<tr>
-			<td><a class="btn btn-default btn-block" href="opengames.php" role="button">View Open Games</a></td>
+			<td><a class="btn btn-default btn-block" href="gamePage.php" role="button">Play Game</a></td>
 		</tr>
 		<tr>
 			<td><a class="btn btn-default btn-block" href="edit-profile.php" role="button">Toggle Game Type</a></td>
 		</tr>
 		<tr>
 			<td><a class="btn btn-default btn-block" href="edit-profile.php" role="button">Edit Profile</a></td>
+		</tr>
+		<tr>
+			<td><a class="btn btn-default btn-block" href="addNewPlayer.php" role="button">Add New User</a></td>
 		</tr>
 	</table>
 
