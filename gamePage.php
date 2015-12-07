@@ -18,15 +18,16 @@ session_start();
     <?php
       include 'navbar.php';
     ?>
-            
+    <br/>
+	<br/>
+	<br/>        
 	<div id="header">
 	<h1><center>Prisoner's Dilemma<center></h1>
 	</div>
 	
 	<div id="content">
 	<center>
-	<br/>
-	<h4><center>SQUEAL! or Stay Silent...</center></h4>
+	<h3><center>SQUEAL! or Stay Silent...</center></h3>
 	<img src="img/squeal.png" style="width:200px;height:320px;">
 	<img src="img/silent.png" style="width:200px;height:320px;">
 	<br/>
@@ -35,12 +36,12 @@ session_start();
       </div>
 	    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
         <br>
-        <a class="btn btn-success btn-block" href="gameResult.html" role="button">Squeal</a>
+        <a class="btn btn-success btn-block" href="gameResult.php" role="button">Squeal</a>
         </div>
 		
 		<div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
         <br>
-        <a class="btn btn-primary btn-block" href="gameResult.html" role="button">Stay Silent</a>
+        <a class="btn btn-primary btn-block" href="gameResult2.php" role="button">Stay Silent</a>
         </div>
         <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
         </div>
