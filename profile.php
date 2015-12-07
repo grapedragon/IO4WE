@@ -1,3 +1,7 @@
+ <?php
+	include("session.php");
+ ?>
+
 <!doctype html>
 <html>
   <head>
@@ -15,7 +19,8 @@
     <?php
       include 'navbar.php';
     ?>
-
+    <br/>
+	<br/>
     <div class="container">
 
     <!--row 1 -->
@@ -25,8 +30,8 @@
         <img src="img/profilepics/orange-ram.png" class="img-responsive hidden-xs">
       </div>
       <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-        <h1>Name: "Bobby Redneck" [insert name php] </h1>
-        <h2>Alias: "Orange Ram" [alias php] </h2>
+        <h1>Name: <?php echo $login_session. " ".$login_lname; ?></h1>
+        <h2>Alias: <?php echo $login_session. " ".$login_lname; ?></h2>
       </div>
     </div>
 
@@ -35,24 +40,16 @@
       <br><br>
       <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3">
         <br><br>
-        <a class="btn btn-default btn-block" href="edit-profile.html" role="button">Edit Profile</a>
+        <a class="btn btn-default btn-block" href="edit-profile.php" role="button">Edit Profile</a>
       </div>
       <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
-        <h2>Running Score: 512 [php]</h2>
+        <h2>Running Score: <?php echo $login_game_score; ?></h2>
         <br><h3>Member of:</h3>
-        <p>[php class stuff]</p>
         <p><b>BIOL 1101-K, Fall 2015</b></p>
         <p>Dr. Bio-man</p><br>
         <p><b>PSYC 3100, Spring 2015</b></p>
         <p>Dr. Psycho-man</p><br>
       </div>
-    </div>
-
-    <!-- row 3, past games table -->
-    <div class="row">
-      <h2>Previous Games</h2>
-      <p>A table will be put inside this row to show some of the past games the user has played.</p>
-      <br><br><br>
     </div>
 
     <!-- javascript -->
