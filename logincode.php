@@ -1,8 +1,10 @@
 <?php
-    error_reporting(0);
+    error_reporting(-1);
+	session_start();
     include("connection.php");
     $login_email = $_POST['email'];
     $login_password = $_POST['password'];
+
     $query = mysqli_query($dbc, "SELECT * FROM users WHERE email='".$login_email."'");
     $numrows = mysqli_num_rows($query);
 	if($_SERVER['REQUEST_METHOD'] == 'POST')
@@ -11,7 +13,7 @@
 			{
 				while($row = mysqli_fetch_array($query))
 				{
-					$dbemail = $row['email']; //must matching with the field name in your database table;
+					$dbemail = $row['email'];
 					$dbpass = $row['pw'];
 					$dbfirstname = $row['first_name'];
                     $dbisadmin = $row['isadmin'];
@@ -25,10 +27,8 @@
                         
                         if($dbisadmin === '1')
                         {
-                            //admin redirect
-                            //alex you need to write where you want the admin to go
                             echo " You are the Almighty Admin MUhahahahaha ";
-                             header('Location: admin.html');
+                             header('Location: admin.php');
                             exit;
                            // echo "admin " .$dbisadmin. " ." ; 
                         }
@@ -36,38 +36,31 @@
                         {
                             //student redirect
                             echo " Oh a student fine";
-                            header('Location: gamePage.html');
+                            header('Location: gamePage.php');
                             exit;
                            // echo "admin" .$dbisadmin. " . ";
-                        }
-                        
-                        
+                        } 
 					}
 		 			else 
 					{		
 						echo "your password is incorrect!";
-						//echo "hey there";
-                       // echo "USER ".$dbemail." ".$login_email." PASS ".$dbpass." ".$login_password.".";
 					}
 				}
 				else
 				{
 					echo "your email is incorrect!";
-					echo "email poop";
                     echo "USER ".$dbemail." ".$login_email." PASS ".$dbpass." ".$login_password.".";
 				}	
 			}
 			else
 			{
 				echo "Invalid credentials! If you are not registered please register bellow...";
-                echo "hellow there";
                 echo "USER ".$dbemail." ".$login_email." PASS ".$dbpass." ".$login_password.".";
 			}
 		}
 		else
 		{
 			echo "Please Login...";	
-			echo "last echo";
             echo "USER ".$dbemail." ".$login_email." PASS ".$dbpass." ".$login_password.".";
 		}
 ?>
