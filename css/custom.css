@@ -1,15 +1,45 @@
 /* this is our custom Css file*/
-body {
+body 
+{
 	background-color: #000;
 	color: #d3d3d3;
 }
-h1{
+h1
+{
 	color: #f60;
 	font-weight: bold;
 	text-shadow: 2px 2px #000000;
 }
-h2{
+h2
+{
 	color: #fff;
+	text-shadow: 2px 2px #000000;
+}
+h3
+{
+	text-shadow: 2px 2px #000000;
+}
+h4
+{
+	text-shadow: 2px 2px #000000;
+}
+
+label
+{
+	text-shadow: 2px 2px #000000;
+}
+
+p
+{
+	text-shadow: 2px 2px #000000;
+		font-weight: bold;
+}
+
+table
+{
+	font-weight: bold;
+	//text-shadow: 2px 2px #000000;
+	color: #ffffff;
 }
 //make default buttons orange, bold and hover effects
 	.btn-default {
