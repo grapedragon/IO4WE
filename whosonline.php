@@ -18,7 +18,9 @@ session_start();
     <?php
       include 'navbar.php';
     ?>
-            
+    <br/>
+	<br/>
+	<br/>             
 	<div id="header">
 	<h1><center>Prisoner's Dilemma<center></h1>
 	<h3><center>Who's Online?<center></h3>
@@ -30,11 +32,30 @@ session_start();
 		</center>
 	</div>
 
-	<div id="footer">
-	<center>
-	By Alex Ikejiani
-	</center>
-	</div>
+<?php
+	include("connection.php");
+    echo "<br/>";
+	$r = mysqli_query($dbc, "SELECT * FROM users");
+	
+    echo "<br/>";
+    echo "<table align = 'center' border='1' cellspacing='3' cellpadding='3' width='75%'>
+        <tr>
+            <td align='left'><b>NAME</b></td>
+			<td align='left'><b>COURSE</b></td>
+			<td align='left'><b>EMAIL</b></td>
+        </tr>";
+
+	while ($row = mysqli_fetch_array($r))
+	{
+		echo "<tr>
+			<td align='left'>".$row['last_name'].", ".$row['first_name']."</td>
+			<td align='left'>".$row['course']."</td>	
+			<td align='left'>".$row['email']."</td>		
+        </tr>";  
+	}
+	mysqli_close($dbc); //always close the connection for security
+	//echo "database connection closed."; //this echo is for testing stage only, no need to show it to user.
+?>
 </body>
 </font>
 </html>
