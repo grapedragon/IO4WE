@@ -15,14 +15,15 @@ session_start();
     <body background="img/backdrops/cbt.png">
 
     <!--navbar-->
-    <?php
-      include_once 'navbar.php';
-    ?>
+
 
     <div class="container">
 
     <!--jumbotron-->
     <div class="header">
+	  <br/>
+	  <br/>
+	  <br/>
       <img src="img/jumbotron-sm.png" class="img-responsive center-block"/>
     </div>
 	
@@ -32,10 +33,10 @@ session_start();
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
         </div>
         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-          <a class="btn btn-default btn-block" href="login.html" role="button">Log In</a>
+          <a class="btn btn-primary btn-block" href="login.php" role="button">Log In</a>
         </div>
 		<div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
-          <a class="btn btn-primary btn-block" href="register.html" role="button">Sign Up</a>
+          <a class="btn btn-default btn-block" href="register.php" role="button">Sign Up</a>
         </div>
         <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
         </div>
@@ -47,4 +48,14 @@ session_start();
 
     </body>
 
+	 <footer>
+	 <center>
+	 <br>
+	 <br>
+	 <br>
+	  <p>Web Development Group Project</p>
+	  <p><a href="http://wiki.ggc.edu/wiki/ITEC4450:Fall2015:Group4">IO4WE Wiki Page</a></p>
+	  </center>
+	</footer> 
+	
 </html>
