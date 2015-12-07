@@ -19,11 +19,7 @@ if ( isset($_POST['register']) )
         if (!filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
         {
             $error[]='Invalid E-mail';
-        }     
-      if($_POST['email']!= $_POST['email2'])
-        {
-            $error[]='The Emails do not match';
-        }
+        }       
 
         if ( count($error) > 0) 
         {
@@ -43,11 +39,6 @@ if ( isset($_POST['register']) )
        <label>Password1</label> <input type="password" maxlength="15" name="password1" /><br>
        <label>Password2</label> <input type="password" maxlength="15" name="password2" /><br>
        <label>Email</label> <input type="text" placeholder="your@email.com" maxlength="25"  name="email" value="<?php if (isset($_POST['email'])) {echo $_POST['email'];} ?>"/><br>
-       <label>Email</label> <input type="text" placeholder="your@email.com" maxlength="25"  name="email2" value="<?php if (isset($_POST['email2'])) {echo $_POST['email2'];} ?>"/><br>
-       <label>First Name</label> <input type="text" maxlength="25" name="fname" /><br>
-       <label>Last Name</label> <input type="text" maxlength="25" name="lname" /><br>
-       
-       
         
         <input type="submit" value="Register" name="register"/>
     </form>
@@ -58,15 +49,12 @@ else {
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 $email = $_POST['email'];
 $password = $_POST['password2'];
-$lname = $_POST['lname'];
-$fname = $_POST['fname'];
 //if values are not empty, proceed to store them in the database
 if( !empty($email) && !empty($password))
 {
-    mysqli_query($dbc, "INSERT INTO users(email, pw, fname, lname) VALUES ('$email', '$password','$fname','$lname')");
-			//	echo " row  inserted, everything worked fine!";
-		include ('login.php');
-		
+    mysqli_query($dbc, "INSERT INTO users(email, pw) VALUES ('$email', '$password')");
+	//	echo " row  inserted, everything worked fine!";
+		include ('login.php')
 		}else{		
 			echo "ERROR: you left some values in blank!";	
 		}
