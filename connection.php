@@ -3,6 +3,7 @@
 $hostname = "localhost";
 $username = "root";
 $password = "indexme";
+//$password = "";
 $dbname = "mytestdatabase";
 
 //making the connection to mysql
