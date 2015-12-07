@@ -1,6 +1,6 @@
 <!doctype html>
 <?php
-session_start();
+	session_start();
 ?>
 <html>
 <head>
@@ -14,34 +14,32 @@ session_start();
 </head>
     <body background = "img/backdrops/cbt.png">
 
-    <!--navbar-->
-    <?php
-      include 'navbar.php';
-    ?>
-
+	  <br/>
 	<div id="header">
 	<h1><center>Prisoner's Dilemma<center></h1>
-	<h3><center>Login<center></h3>
+	<h2><center>Login<center></h2>
 	</div>
 	
 	<div id="body">
 	<script type = "text/javascript" src = "js/register.js"></script>	
 	<center>
-        <p> New? <a href="regi.php">Click Here.</a></p>
+        <h3>New Here?<a href="register.php">Click Here to Register</a></h3>
 	    <form id = "myForm" action = "logincode.php" method="post">
 	        <p>
 	        <br/>
-	    <label> Email
+			
+	    <label> Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         	<input type = "text" id = "userName" name="email">
         	</label>
         	<br/>
-	    <label> Password
-	        <input type = "password" id = "initial" name = "password" />
+	    <label> Password:
+	        <input type = "password" id = "initial" name = "password"/>
 	    </label>
+		
 	    <br/>
 	    <br/>
-	    <input type = "submit" name = "submit" />
-	    <input class="btn btn-default" type="submit" value="submit">
+	    <!--input type = "submit" name = "submit" /-->
+	    <input class="btn btn-default" type="submit" value="Submit">
 	    </p>
 	    </form>
 	    
